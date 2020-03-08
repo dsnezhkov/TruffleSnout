@@ -1,4 +1,4 @@
 packages/**
-bin/**
-obj/**
+BigBertha/bin/**
+BigBertha/obj/**
 .vs/**
