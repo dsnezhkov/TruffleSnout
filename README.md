@@ -1,6 +1,6 @@
 # TruffleSnout
 
-Iterative AD discovery toolkit for offensive operators. Situaitonal awareness and targeted low noise enumeration. 
+Iterative AD discovery toolkit for offensive operators. Situational awareness and targeted low noise enumeration. 
 Preference for OpSec.   
 
 Discover:
