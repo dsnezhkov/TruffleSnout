@@ -1,8 +1,0 @@
-C:\Users\user1\source\repos\BigBertha\BigBertha\bin\Debug\BigBertha.exe.config
-C:\Users\user1\source\repos\BigBertha\BigBertha\bin\Debug\BigBertha.exe
-C:\Users\user1\source\repos\BigBertha\BigBertha\bin\Debug\BigBertha.pdb
-C:\Users\user1\source\repos\BigBertha\BigBertha\bin\Debug\CommandLine.xml
-C:\Users\user1\source\repos\BigBertha\BigBertha\obj\Debug\TruffleSnout.csproj.Fody.CopyLocal.cache
-C:\Users\user1\source\repos\BigBertha\BigBertha\obj\Debug\TruffleSnout.csproj.CopyComplete
-C:\Users\user1\source\repos\BigBertha\BigBertha\obj\Debug\BigBertha.exe
-C:\Users\user1\source\repos\BigBertha\BigBertha\obj\Debug\BigBertha.pdb
