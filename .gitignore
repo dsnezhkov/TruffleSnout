@@ -2,3 +2,4 @@ packages/**
 BigBertha/bin/**
 BigBertha/obj/**
 .vs/**
+BigBertha/obj/Debug/**
