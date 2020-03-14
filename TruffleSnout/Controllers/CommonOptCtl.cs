@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BigBertha
+namespace TruffleSnout
 {
     static class CommonOptCtl
     {

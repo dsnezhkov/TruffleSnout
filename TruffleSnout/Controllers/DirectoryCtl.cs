@@ -1,9 +1,9 @@
-﻿using BigBertha.Utils;
+﻿using TruffleSnout.Utils;
 using System;
 using System.DirectoryServices;
 using System.Linq;
 
-namespace BigBertha
+namespace TruffleSnout
 {
     public static class DirectoryCtl
     {

@@ -1,28 +1,33 @@
-﻿using BigBertha.Utils;
+﻿using TruffleSnout.Utils;
 using System;
 
-namespace BigBertha
+namespace TruffleSnout
 {
-    public static class DomainCtl
+    public static class ForestCtl
     {
-        public static void Run(DomainOptions opts)
+        public static void Run(ForestOptions opts)
         {
-            BBDomain bbd;
+            BBForest bbf;
 
-            Config.Domain.DomainName = opts.DomainName;
-
+            Config.Forest.ForestName = opts.ForestName;
 
             if (opts.All)
             {
-                Config.Domain.Controllers = true;
-                Config.Domain.Trusts = true;
+                Config.Forest.Domains = true;
+                Config.Forest.Trusts = true;
+                Config.Forest.GCs = true;
+                Config.Forest.Sites = true;
             }
             else
             {
-                if (opts.Controllers)
-                    Config.Domain.Controllers = true;
+                if (opts.Domains)
+                    Config.Forest.Domains = true;
                 if (opts.Trusts)
-                    Config.Domain.Trusts = true;
+                    Config.Forest.Trusts = true;
+                if (opts.GCs)
+                    Config.Forest.GCs = true;
+                if (opts.Sites)
+                    Config.Forest.Sites = true;
             }
 
             // Set auth options
@@ -44,25 +49,25 @@ namespace BigBertha
             }
 
             // No need for username/password. Discovery for a situational context
-            if (Config.Domain.DomainName.Equals("current"))
+            if (Config.Forest.ForestName.Equals("current"))
             {
-                Console.WriteLine("\n[*] Discover current domain");
-                bbd = new BBDomain();
-                bbd.DiscoverDomain();
+                Console.WriteLine("\n[*] Discover current forest");
+                bbf = new BBForest();
+                bbf.DiscoverForest();
             }
             else
             {
                 // Discover forest by name.
                 // May be a need for username/password. 
-                Console.WriteLine("\n[*] Discovering domain {0}", Config.Domain.DomainName);
+                Console.WriteLine("\n[*] Discovering forest {0}", Config.Forest.ForestName);
 
                 // If credentials are submitted, use them
                 if (!Config.Auth.User.Equals(String.Empty))
                 {
                     if (!Config.Auth.Password.Equals(String.Empty))
                     {
-                        bbd = new BBDomain(Config.Domain.DomainName, Config.Auth.User, Config.Auth.Password);
-                        bbd.DiscoverDomain();
+                        bbf = new BBForest(Config.Forest.ForestName, Config.Auth.User, Config.Auth.Password);
+                        bbf.DiscoverForest();
                     }
                     else
                     {
@@ -72,8 +77,8 @@ namespace BigBertha
                 else
                 {
                     // If credentials are not provided, use current ones.
-                    bbd = new BBDomain(Config.Domain.DomainName);
-                    bbd.DiscoverDomain();
+                    bbf = new BBForest(Config.Forest.ForestName);
+                    bbf.DiscoverForest();
                 }
             }
         }

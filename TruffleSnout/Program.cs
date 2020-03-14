@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using CommandLine;
 
-namespace BigBertha
+namespace TruffleSnout
 {
     class Program
     {

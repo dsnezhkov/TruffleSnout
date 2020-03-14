@@ -1,5 +1,4 @@
 packages/**
-BigBertha/bin/**
-BigBertha/obj/**
+TruffleSnout/bin/**
+TruffleSnout/obj/**
 .vs/**
-BigBertha/obj/Debug/**

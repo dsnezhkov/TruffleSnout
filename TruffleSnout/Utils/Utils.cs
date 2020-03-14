@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Security;
 
-namespace BigBertha.Utils
+namespace TruffleSnout.Utils
 {
     static class Utils
     {

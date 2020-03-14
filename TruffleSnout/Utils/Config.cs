@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BigBertha.Utils
+namespace TruffleSnout.Utils
 {
     static class Config
     {

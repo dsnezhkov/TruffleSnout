@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BigBertha
+namespace TruffleSnout
 {
     static class UtilCtl
     {
@@ -37,7 +37,7 @@ namespace BigBertha
                 if ( bytes2GuidCount !=0)
                 {
 
-                Console.WriteLine("SID: {0}", Utils.Utils.Bytes2GUID(bytes2GUID));
+                Console.WriteLine("GUID: {0}", Utils.Utils.Bytes2GUID(bytes2GUID));
                 }
             }catch(Exception e)
             {

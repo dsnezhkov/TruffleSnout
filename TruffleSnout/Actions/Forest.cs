@@ -1,7 +1,7 @@
 ﻿using System;
 using System.DirectoryServices.ActiveDirectory;
 
-namespace BigBertha
+namespace TruffleSnout
 {
     class BBForest
     {

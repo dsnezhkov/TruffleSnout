@@ -1,11 +1,11 @@
-﻿using BigBertha.Utils;
+﻿using TruffleSnout.Utils;
 using System;
 using System.Collections;
 using System.DirectoryServices;
 using System.DirectoryServices.ActiveDirectory;
 using System.Linq;
 
-namespace BigBertha
+namespace TruffleSnout
 {
     class BBDirectory
     {
