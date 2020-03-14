@@ -1,4 +1,4 @@
 packages/**
-TruffleSnout/bin/**
-TruffleSnout/obj/**
+bin
+obj
 .vs/**
