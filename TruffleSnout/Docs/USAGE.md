@@ -3,8 +3,7 @@
 
 TruffleSnout is designed to help operators in a targeted discovery of immediate and adjacent AD infrastructure, query AD objects.
 It is designed to work in iterative fashion and provides granular control of the types of queries the operator can issue.
-This helps preserving a degree of operational security where the operastor can limit and vary queries to match the perceived defenses and acoid
-triggering alerts or generate excessive logging.
+This helps preserving a degree of operational security where the operator can limit and vary queries to match the perceived defenses and avoid triggering alerts or generate excessive logging.
 
 The tool follows the natural discovery workflow many operators execute on the internal networks and helps answer precise questions like:
 - Which forest am I in
@@ -20,9 +19,8 @@ The tool follows the natural discovery workflow many operators execute on the in
 - Can I query a specific attribute or a list of the object
 - Can I search for patterns in the returned result.
 
-A few initial uitilities to analyze the returned information are provided. 
-By being flaxible on the LDAP queries operartors are not restricted in their exploration of AD objects to commonly used sets like groups, users, computers.
-Operators can query DNS, Certtificates and other types of resources stored in the hierarchy.
+A few initial utilities to analyze the returned information are provided. 
+By being flexible on the LDAP queries operators are not restricted in their exploration of AD objects to commonly used sets like groups, users, computers. Operators can query DNS, Certificates and other types of resources stored in the hierarchy.
 
 ## Examples
 
